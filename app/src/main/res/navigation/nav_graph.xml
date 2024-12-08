@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.foguete.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_ProporcaoTela"
+            app:destination="@id/ProporcaoTela" />
+        <action
+            android:id="@+id/action_FirstFragment_to_Estimativa"
+            app:destination="@id/Estimativa" />
+        <action
+            android:id="@+id/action_FirstFragment_to_Informacoes"
+            app:destination="@id/Informacoes" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProporcaoTela"
+        android:name="com.foguete.ProporcaoTela"
+        android:label="@string/proporcao_tela_label"
+        tools:layout="@layout/proporcao_tela">
+        <action
+            android:id="@+id/action_ProporcaoTela_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Estimativa"
+        android:name="com.foguete.EstimativaTela"
+        android:label="@string/estimativa_tela_label"
+        tools:layout="@layout/estimativa_tela">
+        <action
+            android:id="@+id/action_Estimativa_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Informacoes"
+        android:name="com.foguete.InformacoesTela"
+        android:label="@string/informacoes_tela_label"
+        tools:layout="@layout/informacoes_tela">
+        <action
+            android:id="@+id/action_Informacoes_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

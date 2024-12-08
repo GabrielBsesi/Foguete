@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <!-- Alterando a cor de fundo -->
+        <item name="android:background">#3E3E3E</item> <!-- Cor de fundo -->
+
+        <!-- Alterando a altura (tamanho) da Toolbar -->
+        <item name="android:height">20dp</item>
+
+        <!-- Alterando a cor do texto do título -->
+        <!-- <item name="android:textColor">#FF0B0B</item> -->
+
+        <!-- Alterando o tamanho do texto do título -->
+        <item name="android:textSize">28sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+</resources>
